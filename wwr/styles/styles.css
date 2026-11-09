@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E8D8C3;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4A3828;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #F5EFE6;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: #F5EFE6;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+.logo {
+    width: 80px;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a {
+    color: #4A3828;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 20px;
+}
+
+nav a:hover {
+    background-color: #D6C1A8;
+    color: #000;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+#hero-img {
+    width: 100%;
+    display: block;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    align-self: center;
+    padding: 30px;
+    background-color: #E8D8C3;
+}
+
+
+/* HAVE AN ADVENTURE TITLE */
+
+.home-title {
+    font-family: "Caveat", cursive;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #C9824A;
+    margin: 10px 0;
+}
+
+#hero-msg h4 {
+    font-size: 20px;
+    margin: 10px 0 25px;
+    color: #4A3828;
+}
+
+
+/* BOOK NOW BUTTON */
+
+.button-box {
+    margin: 20px;
+}
+
+.book {
+    display: inline-block;
+    background-color: #C9824A;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+}
+
+.book:hover {
+    background-color: #B96845;
+}
+
+
+/* =========================
+   RIVERS, CAMPING, RAPIDS
+   ========================= */
+
+main {
+    text-align: center;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    margin: 40px 1%;
+    background-color: #F5EFE6;
+
+    /* Light brown border */
+    border: 3px solid #D6C1A8;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .15);
+    padding-bottom: 20px;
+}
+
+.card-img {
+    width: 100%;
+    display: block;
+}
+
+.icon {
+    width: 60px;
+    margin-top: 20px;
+}
+
+.rivers-card h2,
+.camping-card h2,
+.rapids-card h2 {
+    font-size: 25px;
+    margin: 15px 0;
+    color: #4A3828;
+}
+
+
+/* =========================
+   BACKGROUND AND MOUNTAINS
+   ========================= */
+
+#background {
+    height: 725px;
+    background-color: #D6C1A8;
+    margin-top: 20px;
+}
+
+.mountains {
+    display: block;
+    width: 100%;
+    margin-top: -600px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================
+   MORE THAN JUST THE THRILL
+   ========================= */
+
+.msg {
+    position: relative;
+    z-index: 2;
+    background-color: #E8D8C3;
+    max-width: 650px;
+    margin: -250px auto 100px;
+    padding: 45px;
+    text-align: center;
+
+    border: 3px solid #D6C1A8;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+}
+
+.msg h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #C9824A;
+}
+
+.msg p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4A3828;
+}
+
+
+/* JOIN US BUTTON */
+
+.join {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #C9824A;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+}
+
+.join:hover {
+    background-color: #B96845;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #4A3828;
+    color: white;
+    padding: 30px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 5px 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social img {
+    width: 40px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media screen and (max-width: 800px) {
+
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .rivers-card,
+    .camping-card,
+    .rapids-card {
+        display: block;
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    .home-title {
+        font-size: 50px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

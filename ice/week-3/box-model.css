@@ -1,0 +1,42 @@
+h1 {
+    color: red;
+    font-size: 80px;
+    font-style: italic;
+    text-align:center;
+    margin-bottom: 100px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+/* adjust paragraph styling */
+p {
+    margin: 100px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 10px;
+    padding: 35px;
+}
+
+/* an id selector */
+#second-heading {
+    color: green;
+
+}
+
+/* a class selector */
+p.subtitle-text {
+    color: purple;
+    font-size: 32px;
+}
+ 
+/* Descendancy selector */
+div p {
+    color: orange;
+}
+
+/* span by default is an inline element */
+div p span {
+    display: block;
+    font-weight:bolder;
+    font-size: 48px;
+}

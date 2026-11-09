@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mark Aitken's WDD 130 course portal for projects and assignments.">
+    <title>Mark Aitken | WDD 130 Portal</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img class="brand-logo" src="images/logo.png" alt="Mark Aitken logo">
+
+            <span class="brand-name">
+                Mark Aitken
+                <small>WDD 130 Portal</small>
+            </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="#wwr">WWR</a>
+            <a href="ice.html">ICE</a>
+            <a href="about.html">About Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Welcome section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">WELCOME TO MY COURSE PORTAL</p>
+
+                <h1 id="hero-title">
+                    Learning, building, and
+                    <span>making progress.</span>
+                </h1>
+
+                <p class="hero-intro">
+                    Welcome to my WDD 130 portal! This is my central place
+                    for all my projects and assignments.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">
+                        Explore My Work
+                    </a>
+                    <a class="button button-secondary" href="about.html">
+                        About Me
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-art">
+                <div class="hero-image-frame">
+                    <img src="images/logo.png" alt="My portfolio logo">
+                </div>
+
+                <div class="image-note">
+                    <span class="note-dot"></span>
+                    WDD 130 Projects
+                </div>
+            </div>
+        </section>
+
+        <!-- My Projects -->
+        <section id="projects" class="section-wrap">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">CLASS WORK</span>
+                    <h2>My Projects</h2>
+                    <p>
+                        Explore the websites and practice activities
+                        I am building in WDD 130.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <article id="wwr" class="project-card">
+                    <span class="project-number">01</span>
+                    <h3>White Water Rafting</h3>
+                    <p>
+                        My WWR website project, where I practice
+                        page structure, layout, and styling.
+                    </p>
+                    <a class="project-link" href="wwr/index.html">
+                        View WWR Project
+                    </a>
+                </article>
+
+                <article id="ice" class="project-card">
+                    <span class="project-number">02</span>
+                    <h3>ICE Challenges</h3>
+                    <p>
+                        In-class exercises where I practice HTML,
+                        CSS Grid, and positioning.
+                    </p>
+                    <a class="project-link" href="ice.html">
+                        View ICE Challenges
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-number">03</span>
+                    <h3>Course Portfolio</h3>
+                    <p>
+                        This portal brings together my progress,
+                        class projects, and web design skills.
+                    </p>
+                    <a class="project-link" href="#project-list">
+                        See Project List
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills and Table -->
+        <section id="project-list" class="section-wrap">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">WHAT I AM LEARNING</span>
+                    <h2>My Web Design Skills</h2>
+                    <p>
+                        Some of the skills I am developing in this course:
+                    </p>
+                </div>
+            </div>
+
+            <ul>
+                <li>Writing semantic HTML</li>
+                <li>Styling pages with CSS</li>
+                <li>Building layouts with CSS Grid</li>
+            </ul>
+
+            <table class="project-table">
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Focus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Portal Page</td>
+                        <td>HTML and CSS</td>
+                    </tr>
+                    <tr>
+                        <td>WWR Website</td>
+                        <td>Multi-page web design</td>
+                    </tr>
+                    <tr>
+                        <td>ICE Challenges</td>
+                        <td>CSS layout practice</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="about-strip">
+            <div class="about-symbol">
+                <img src="images/logo.png" alt="Portfolio logo">
+            </div>
+
+            <div>
+                <h2>About Me</h2>
+                <p>
+                    I'm learning to build websites that are useful,
+                    organized, and easy to navigate. This portal is
+                    a place to track my progress and share what I
+                    create in WDD 130.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="contact-copy">
+                <span class="section-label">GET IN TOUCH</span>
+                <h2>Contact</h2>
+                <p>
+                    Have a question about one of my projects?
+                    Use this practice contact form.
+                </p>
+                <p>
+                    <small>
+                        This form is a visual example and does not
+                        send messages yet.
+                    </small>
+                </p>
+            </div>
+
+            <form class="contact-form" action="#contact" method="get">
+                <div class="form-group">
+                    <label for="visitor-name">Name</label>
+                    <input id="visitor-name" name="name"
+                           type="text" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="visitor-email">Email</label>
+                    <input id="visitor-email" name="email"
+                           type="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="visitor-message">Message</label>
+                    <textarea id="visitor-message"
+                              name="message" required></textarea>
+                </div>
+
+                <button class="button button-primary"
+                        type="button" disabled>
+                    Send Message (Coming Soon)
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <a class="footer-brand" href="index.html">
+            Mark Aitken <span>WDD 130 Portal</span>
+        </a>
+
+        <p>&copy; 2026 Mark Aitken. Course portfolio.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="#wwr">WWR</a>
+            <a href="ice.html">ICE</a>
+            <a href="about.html">About Me</a>
+        </div>
+    </footer>
+</body>
+</html>
